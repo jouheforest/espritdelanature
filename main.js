@@ -81,11 +81,6 @@
     }
     if (window.ScrollTrigger) {
       gsap.registerPlugin(ScrollTrigger);
-      /* la photo de la plaque et les tuiles glissent doucement au défilement */
-      document.querySelectorAll('.tile img, .plate__img img, .hist-hero__img img, .prod__img img').forEach(img => {
-        gsap.fromTo(img, { yPercent: -6, scale: 1.08 }, { yPercent: 6, scale: 1.08, ease: 'none',
-          scrollTrigger: { trigger: img.parentElement, start: 'top bottom', end: 'bottom top', scrub: true } });
-      });
       /* le mot « quarante-cinq » du titre Huile de lys compte au défilement */
       const lys = document.querySelector('#h-lys');
       if (lys && /quarante-cinq/.test(lys.textContent)) {
