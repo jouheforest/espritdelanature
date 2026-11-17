@@ -168,7 +168,7 @@
       f.querySelectorAll('[required]').forEach(inp => {
         const bad = !inp.value.trim() || (inp.type === 'email' && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(inp.value));
         inp.setAttribute('aria-invalid', String(bad));
-        inp.style.outline = bad ? '3px solid #121d17' : '';
+        inp.style.outline = bad ? '3px solid #0b1310' : '';
         if (bad) ok = false;
       });
       if (!ok) return;
