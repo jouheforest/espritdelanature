@@ -8,14 +8,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=3">
 <script>document.documentElement.classList.remove('no-js')</script>
 </head>
 <body>
 
 <header class="nav" id="nav">
   <a class="nav__mark" href="index.html" aria-label="Esprit de la Nature, accueil">
-    <svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="14" cy="14" r="4.5" fill="currentColor"/></svg>
+    <svg class="sig" style="width:28px;height:28px" aria-hidden="true"><use href="#sig-nuit"/></svg>
     Esprit de la Nature
   </a>
   <nav class="nav__links" aria-label="Principale">
@@ -38,13 +38,20 @@
 </div>
 
 <main>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="sig-nuit" viewBox="0 0 32 32"><path d="M21 5c-3.2 1.1-5.3 4-5.1 7.4.2 3.6 3 6.4 6.6 6.4 1 0 2-.2 2.8-.6-1.3 2.4-3.9 3.9-6.8 3.7-4.2-.3-7.3-3.9-7-8.1.2-4 3.6-7.2 7.6-7.3"/><path d="M6 27l3.2-7.6L12.3 27"/><path d="M7.4 23.9h3.6"/><path d="M14.5 27l2.6-5.8 2.7 5.8"/></symbol>
+  <symbol id="sig-permission" viewBox="0 0 32 32"><path d="M16 27V12.5"/><path d="M16 19c-3.4-.6-6-3.4-6.5-7 3.5.4 6.1 3 6.5 7z"/><path d="M16 15.5c.4-3.3 2.9-5.8 6.3-6.2-.4 3.4-2.9 5.9-6.3 6.2z"/><path d="M9 7.5c2-1.9 4.3-2.9 7-2.9s5 1 7 2.9"/><path d="M13.5 26.5h5"/></symbol>
+  <symbol id="sig-patience" viewBox="0 0 32 32"><path d="M9 6h14M9 26h14"/><path d="M11 6c0 4.6 3 7 5 10-2 3-5 5.4-5 10M21 6c0 4.6-3 7-5 10 2 3 5 5.4 5 10"/><path d="M13.6 22.8h4.8"/><path d="M16 11.4v1.2"/></symbol>
+  <symbol id="sig-cueilli" viewBox="0 0 32 32"><path d="M7 26c6-5 9.5-10.3 11-18"/><path d="M12.8 15.5c-3 .2-5.3-1.5-6.3-4.3 2.9-.6 5.4.8 6.3 4.3z"/><path d="M15.4 11.2c.6-3 2.8-4.8 5.8-5-.3 3-2.4 5-5.8 5z"/><path d="M18 8c2.7-1 5.3-.6 7.5 1.2"/><path d="M21 26c-3.6 0-6.4-1.7-8-4.4"/></symbol>
+  <symbol id="sig-macere" viewBox="0 0 32 32"><path d="M12 5h8"/><path d="M14 5v6.5L7.5 23.4c-.9 1.7.3 3.6 2.2 3.6h12.6c1.9 0 3.1-1.9 2.2-3.6L18 11.5V5"/><path d="M10.2 20.5c2 .8 3.9-.9 5.8 0s3.8 .9 5.8 0"/><path d="M16 15.2v.1M13.6 18v.1M18.4 17.3v.1"/></symbol>
+  <symbol id="sig-compose" viewBox="0 0 32 32"><path d="M7 18.5h18v6.5a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/><path d="M8.5 18.5l1-3h13l1 3"/><path d="M16 15.5c-1.6-1.8-1.6-3.6 0-5.4 1.6-1.8 1.6-3.4 0-5.1"/><path d="M11.8 15.5c-1.2-1.4-1.2-2.8 0-4.2M20.2 15.5c1.2-1.4 1.2-2.8 0-4.2"/></symbol>
+</svg>
 
 <!-- HERO : la carte et la pièce -->
 <section class="hero" aria-label="Présentation">
   <div class="hero__card">
     <div>
-      <div class="hero__band" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-      <div class="hero__body">
+            <div class="hero__body" style="padding-top:56px">
         <div class="hero__word"><span class="dot"></span>Laurentides, hors réseau</div>
         <h1>Encens et parfums cueillis dans la forêt</h1>
         <p>Bonnie Kerr compose à la main des encens chauffés, des bâtons et des parfums à partir de plantes qu'elle récolte elle-même autour de sa cabane.</p>
@@ -73,16 +80,16 @@
 
 <!-- ÉNONCÉ -->
 <section class="statement" aria-label="Ce qu'on fait">
-  <p class="rv">Chaque encens commence par une nuit en forêt<span class="ring"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:200/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2022/11/Website-Photo-copy.jpg" width="200" height="200" alt="" loading="lazy"></span>, une récolte faite avec permission<span class="ring"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:200/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2024/04/In-the-Gathering-Bucket.jpg" width="200" height="200" alt="" loading="lazy"></span> et des semaines de patience<span class="ring"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:200/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2026/02/Hamd-with-Mortar-and-Pestel.webp" width="200" height="200" alt="" loading="lazy"></span> avant d'entrer dans sa boîte.</p>
+  <p class="rv">Chaque encens commence par une nuit en forêt<svg class="sig" aria-hidden="true"><use href="#sig-nuit"/></svg>, une récolte faite avec permission<svg class="sig" aria-hidden="true"><use href="#sig-permission"/></svg> et des semaines de patience<svg class="sig" aria-hidden="true"><use href="#sig-patience"/></svg> avant d'entrer dans sa boîte.</p>
 </section>
 
 <!-- DE LA FORÊT À LA BOÎTE -->
 <section class="section on-paper" aria-labelledby="h-steps">
   <div class="steps">
     <h2 class="steps__head rv" id="h-steps">De la forêt à la boîte</h2>
-    <div class="tile tile--1 rv"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:700/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2024/04/In-the-Gathering-Bucket.jpg" width="700" height="564" alt="Le seau de récolte rempli de fleurs fraîchement cueillies" loading="lazy"></div>
-    <div class="tile tile--2 rv"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:900/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2024/04/Nicotiana-living-enfleurage.jpg" width="900" height="900" alt="Fleurs de tabac d'ornement en enfleurage vivant dans un bocal" loading="lazy"></div>
-    <div class="tile tile--3 rv"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:1100/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2024/05/Website-incense-group-photo.jpg" width="1100" height="1100" alt="Les boîtes rondes d'encens chauffé d'Esprit de la Nature réunies sur une table" loading="lazy"></div>
+    <div class="tile tile--1 rv"><svg class="sig" aria-hidden="true"><use href="#sig-cueilli"/></svg></div>
+    <div class="tile tile--2 rv"><svg class="sig" aria-hidden="true"><use href="#sig-macere"/></svg></div>
+    <div class="tile tile--3 rv"><svg class="sig" aria-hidden="true"><use href="#sig-compose"/></svg></div>
     <div class="steps__txt steps__txt--1 rv"><b>Cueilli</b><p>Dans la forêt autour de la cabane et dans les jardins. On demande, on prend juste ce qu'il faut, on remercie.</p></div>
     <div class="steps__txt steps__txt--2 rv"><b>Macéré</b><p>Macération, teinture, distillation, enfleurage. Des procédés anciens, parfois des semaines, jamais de synthétique.</p></div>
     <div class="steps__txt steps__txt--3 rv"><b>Composé</b><p>Bonnie fait le nez, Sylvain fait la boîte. Chaque mélange est produit en petite quantité et porte une histoire.</p></div>
@@ -286,6 +293,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="main.js"></script>
+<script src="main.js?v=3"></script>
 </body>
 </html>
