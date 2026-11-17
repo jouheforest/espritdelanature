@@ -72,13 +72,7 @@
     document.addEventListener('visibilitychange', () => document.hidden ? clearInterval(t) : start());
   }
 
-  /* --- fumée : se dessine au chargement, puis respire --- */
   if (window.gsap && !reduced) {
-    const paths = document.querySelectorAll('.smoke path');
-    if (paths.length) {
-      gsap.to(paths, { strokeDashoffset: 0, duration: 3.2, ease: 'power2.out', stagger: 0.6, delay: 0.4 });
-      gsap.to('.smoke', { y: -18, x: 6, duration: 4, ease: 'sine.inOut', yoyo: true, repeat: -1 });
-    }
     if (window.ScrollTrigger) {
       gsap.registerPlugin(ScrollTrigger);
       /* le mot « quarante-cinq » du titre Huile de lys compte au défilement */
