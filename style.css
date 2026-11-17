@@ -66,8 +66,8 @@ p{max-width:62ch}
 /* ---------- sigils ---------- */
 .sig{display:inline-block;width:1em;height:1em;vertical-align:-.12em;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .statement .sig{width:1.05em;height:1.05em;margin:0 .14em;color:var(--accent);stroke-width:1.8}
-.tile .sig{position:absolute;width:52%;height:52%;left:12%;bottom:12%;color:var(--accent);stroke-width:1.1}
-.tile--3 .sig{left:auto;right:12%;top:14%;bottom:auto}
+.tile .sig{position:absolute;width:40%;height:40%;left:10%;bottom:10%;color:var(--accent);stroke-width:1}
+.tile--3 .sig{left:auto;right:10%;top:12%;bottom:auto}
 .tile--1{background:var(--surface)}
 
 /* ---------- nav ---------- */
