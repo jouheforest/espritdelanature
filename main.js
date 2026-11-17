@@ -20,19 +20,16 @@
 
   /* --- nav : change de ton selon la section --- */
   const nav = document.getElementById('nav');
-  const papers = document.querySelectorAll('.on-paper, .hero__card, .prod__buy, .hist-hero__txt');
-  if (nav && 'IntersectionObserver' in window) {
-    const io = new IntersectionObserver(entries => {
-      entries.forEach(en => {
-        if (en.isIntersecting) nav.classList.add('is-paper'); else if (![...papers].some(p => { const r = p.getBoundingClientRect(); return r.top <= 64 && r.bottom >= 64; })) nav.classList.remove('is-paper');
-      });
-    }, { rootMargin: '-64px 0px -100% 0px', threshold: 0 });
-    papers.forEach(p => io.observe(p));
-    addEventListener('scroll', () => {
-      const onPaper = [...papers].some(p => { const r = p.getBoundingClientRect(); return r.top <= 64 && r.bottom >= 64; });
+  const papers = [...document.querySelectorAll('.on-paper, .hero__card, .prod__buy, .hist-hero__txt')];
+  if (nav) {
+    const tone = () => {
+      const onPaper = papers.some(p => { const r = p.getBoundingClientRect(); return r.top <= 48 && r.bottom >= 48; });
       nav.classList.toggle('is-paper', onPaper);
       nav.classList.toggle('is-dark', !onPaper && scrollY > 40);
-    }, { passive: true });
+    };
+    addEventListener('scroll', tone, { passive: true });
+    addEventListener('resize', tone);
+    tone();
   }
 
   /* --- entrées en cascade --- */
