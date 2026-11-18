@@ -21,7 +21,7 @@
 
   /* --- nav : change de ton selon la section --- */
   const nav = document.getElementById('nav');
-  const papers = [...document.querySelectorAll('.on-paper, .hero__card, .prod__buy, .hist-hero__txt')];
+  const papers = [];
   if (nav) {
     const tone = () => {
       const onPaper = papers.some(p => { const r = p.getBoundingClientRect(); return r.top <= 48 && r.bottom >= 48; });
@@ -56,10 +56,9 @@
     const imgs = [...room.querySelectorAll('img')];
     const cap = document.getElementById('roomcap');
     const caps = [
-      'Lac-Noir, encens chauffé, sur la mousse derrière la cabane',
+      'La cabane, construite à la main, et les calendulas',
       'Bonnie, le nez dans les narcisses du jardin',
-      'Le seau de récolte, un matin de juin',
-      'La cabane, construite à la main, et les calendulas'
+      'Un brûleur sur la mousse, derrière la cabane'
     ];
     let i = 0, t;
     const next = () => {
@@ -130,7 +129,7 @@
       if (hits.length < 2) hits = hits.concat(cat.filter(c => c.mode === pick.mode && c.mom.includes(pick.moment) && !hits.includes(c)));
       hits = hits.slice(0, 3);
       out.innerHTML = '<p>' + (hits.length > 1 ? 'Voici ce que Bonnie te mettrait dans les mains.' : 'Un seul vrai candidat, et c\'est un bon.') + '</p>' +
-        hits.map(h => '<a class="hit" href="' + (h.url || '#') + '"><span class="ring"><img src="' + O + h.img + '" width="96" height="96" alt="" loading="lazy"></span><span><b>' + h.n + '</b><p>' + h.d + '</p></span><span class="price">' + h.p + ' $</span></a>').join('');
+        hits.map(h => '<a class="hit" href="' + (h.url || '#') + '"><img src="' + O + h.img + '" width="84" height="84" alt="" loading="lazy"><span><b>' + h.n + '</b><p>' + h.d + '</p></span><span class="price">' + h.p + ' $</span></a>').join('');
       requestAnimationFrame(() => out.querySelectorAll('.hit').forEach((h, i) => setTimeout(() => h.classList.add('is-in'), 80 * i)));
     }
   }
@@ -158,7 +157,7 @@
       f.querySelectorAll('[required]').forEach(inp => {
         const bad = !inp.value.trim() || (inp.type === 'email' && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(inp.value));
         inp.setAttribute('aria-invalid', String(bad));
-        inp.style.outline = bad ? '3px solid #0b1310' : '';
+        inp.style.outline = bad ? '3px solid #a4512b' : '';
         if (bad) ok = false;
       });
       if (!ok) return;
@@ -181,7 +180,7 @@
     e.preventDefault();
     const c = document.querySelector('.nav__cart'); if (!c) return;
     const n = (+c.textContent.replace(/\D/g, '') || 0) + 1;
-    c.innerHTML = 'Panier <span class="dot" style="margin:0"></span> ' + n;
+    c.textContent = 'Panier · ' + n;
     if (window.gsap) gsap.fromTo(c, { scale: 1.12 }, { scale: 1, duration: 0.35, ease: 'power3.out' });
   }));
 })();

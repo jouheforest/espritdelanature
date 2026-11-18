@@ -7,17 +7,19 @@
 <meta name="description" content="Bonnie Kerr et Sylvain Pilon vivent hors réseau dans la forêt des Laurentides, dans une cabane construite à la main. Depuis trente ans, ils cueillent, macèrent et composent des encens et des parfums.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500&family=Delicious+Handrawn&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=7">
+<link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Instrument+Serif&family=Hanken+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=10">
 <script>document.documentElement.classList.remove('no-js')</script>
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="pl-fougere" viewBox="0 0 120 240"><path d="M62 236c-3-40-4-80-2-120l-10 6c-8 5-16 7-25 6 6-7 13-11 22-13l12-5c0-6 .5-12 1-18l-9 5c-8 4-15 5-23 3 5-6 12-9 20-11l12-5c.6-6 1.5-12 2.6-17l-8 4c-7 3-13 4-20 2 5-5 11-8 18-10l11-4c1.5-7 3.3-14 5.4-20l-6 3c-6 2-11 3-16 1 4-4 9-6 15-8l9-3C73 20 76 12 80 4c3 8 4 16 4 24l9 3c6 2 11 4 15 8-5 2-10 1-16-1l-6-3c1 6 2 13 2 20l11 4c7 2 13 5 18 10-7 2-13 1-20-2l-8-4c.5 6 .7 12 .6 18l12 5c8 2 15 5 20 11-8 2-15 1-23-3l-9-5c-.2 6-.6 12-1.2 18l12 5c9 2 16 6 22 13-9 1-17-1-25-6l-10-6c1 40-1 80-6 120h-4z"/></symbol>
+  <symbol id="pl-pissenlit" viewBox="0 0 140 240"><path d="M68 238V96h4v142zM70 20c3 10 6 20 7 30 8-7 17-11 27-12-6 8-14 14-24 17 10 2 19 7 26 15-10 0-19-3-27-9 6 8 9 17 10 27-8-6-13-14-16-24-3 10-8 18-16 24 1-10 4-19 10-27-8 6-17 9-27 9 7-8 16-13 26-15-10-3-18-9-24-17 10 1 19 5 27 12 1-10 4-20 7-30z"/></symbol>
+</svg>
+
 <header class="nav" id="nav">
-  <a class="nav__mark" href="index.html" aria-label="Esprit de la Nature, accueil">
-    <svg class="sig" style="width:28px;height:28px" viewBox="0 0 32 32" aria-hidden="true"><path d="M16.2 28.5V9.8"/><path d="M11.4 14.3c1.5 1.1 3.2 1.4 4.8.9M20.9 17.6c-1.6 1-3.3 1.2-4.7.6"/><path d="M22.8 6.4c-2.7.4-4.6 2.7-4.4 5.3.2 2.4 2.1 4.2 4.5 4.3-.9 1.3-2.6 2-4.3 1.6-2.9-.6-4.7-3.4-4.1-6.3.5-2.6 2.9-4.5 5.5-4.6"/><path d="M8.6 27.1l15.2.3"/><path d="M9.3 6.1v.2M26 11.2v.2"/></svg>
-    Esprit de la Nature
-  </a>
+  <a class="nav__mark hand" href="index.html">Esprit de la Nature</a>
   <nav class="nav__links" aria-label="Principale">
     <a href="index.html#encens">Encens</a>
     <a href="index.html#parfums">Parfums</a>
@@ -25,93 +27,88 @@
     <a href="index.html#huile-de-lys">Huile de lys</a>
     <a href="histoire.html" aria-current="page">Notre histoire</a>
   </nav>
-  <a class="nav__cart" href="#panier">Panier <span class="dot" style="margin:0"></span> 0</a>
+  <a class="nav__cart" href="#panier">Panier · 0</a>
   <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
 </header>
 <div class="menu" id="menu">
-  <a href="index.html#encens">Encens</a>
-  <a href="index.html#parfums">Parfums</a>
-  <a href="index.html#apothicaire">Apothicaire</a>
-  <a href="index.html#huile-de-lys">Huile de lys</a>
-  <a href="histoire.html">Notre histoire</a>
+  <a class="hand" href="index.html#encens">Encens</a>
+  <a class="hand" href="index.html#parfums">Parfums</a>
+  <a class="hand" href="index.html#apothicaire">Apothicaire</a>
+  <a class="hand" href="index.html#huile-de-lys">Huile de lys</a>
+  <a class="hand" href="histoire.html">Notre histoire</a>
   <small>Livraison gratuite dès 175 $ · Laurentides, Québec</small>
 </div>
 
 <main>
 
-<section class="hist-hero" aria-label="Notre histoire">
-  <figure class="hist-hero__img">
-    <img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:1600/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2024/04/Cabin-and-the-Garden-calendulas.jpg" width="1600" height="1069" alt="La cabane de Bonnie et Sylvain, en bois, derrière un jardin de calendulas orange" fetchpriority="high">
+<section class="hero" aria-label="Notre histoire" style="justify-content:flex-end">
+  <figure class="hero__room">
+    <img class="is-on" src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:1800/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2024/04/Cabin-and-the-Garden-calendulas.jpg" width="1800" height="1203" alt="La cabane de Bonnie et Sylvain, en bois, derrière un jardin de calendulas orange" fetchpriority="high">
+    <svg class="scrib" style="left:78%;top:16%;width:80px;height:80px;transform:rotate(14deg)" viewBox="0 0 32 32"><path d="M16 4v24M4 16h24M7.5 7.5l17 17M24.5 7.5l-17 17"/></svg>
   </figure>
-  <div class="hist-hero__txt">
-    <h1>Écouter la voix des plantes</h1>
+  <h1 class="hand hero__title">Écouter la voix des plantes</h1>
+  <div class="hero__bottom">
     <p>Bonnie Kerr et Sylvain Pilon, trente ans à co-créer, une cabane construite à la main et des milliers d'hectares de forêt inhabitée autour.</p>
   </div>
 </section>
 
-<section class="chap" aria-labelledby="h-c1">
-  <h2 class="rv" id="h-c1">Bonnie, l'artisane, l'herboriste et le nez</h2>
-  <div class="chap__txt">
-    <p class="rv">Je suis la propriétaire d'Esprit de la Nature, et aussi son artisane, son herboriste, son alchimiste et son nez. Je crée des encens, des parfums et des remèdes à base de plantes entières et d'extraits que je fabrique moi-même, à partir de mes nombreux jardins ou de la forêt où je vis. Je passe autant de temps à cultiver et à butiner qu'à composer.</p>
-    <p class="rv">Mon inspiration vient souvent des plantes elles-mêmes, quand nous chantons ensemble. Un environnement sain est un chant olfactif que j'essaie de recréer dans chaque mélange. Pour ce qui ne pousse pas ici, je ne compose qu'avec des ingrédients de la plus haute qualité et d'origine responsable.</p>
-    <p class="rv">Formée à l'herboristerie mais autodidacte en parfumerie, je ne suis liée à aucune tradition. Ça me donne une grande liberté : des formules anciennes, des procédés anciens, et mes propres inventions. Macération, teinture, distillation, fermentation, percolation, conservation au sel et au sucre. Les mêmes gestes servent aux remèdes, aux encens et aux parfums.</p>
-    <div class="chap__fig">
-      <figure class="rv"><div class="ring"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:900/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2024/04/Bonnie-smelling-narcissus-2.jpg" width="900" height="900" alt="Bonnie, les yeux fermés, sent une fleur de narcisse" loading="lazy"></div><figcaption>Bonnie et les narcisses, au printemps</figcaption></figure>
-      <figure class="rv"><div class="ring"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:900/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2024/04/Nicotiana-living-enfleurage.jpg" width="900" height="900" alt="Fleurs de tabac d'ornement en enfleurage vivant" loading="lazy"></div><figcaption>Enfleurage vivant de nicotiana, la nuit</figcaption></figure>
+<section class="half" aria-labelledby="h-c1">
+  <div class="half__photo">
+    <img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:1400/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2024/04/Bonnie-smelling-narcissus-2.jpg" width="1400" height="800" alt="Bonnie, les yeux fermés, sent une fleur de narcisse" loading="lazy">
+  </div>
+  <div class="sheet half__sheet">
+    <div>
+      <svg class="plant rv" style="width:100px" viewBox="0 0 120 240" aria-hidden="true"><use href="#pl-fougere"/></svg>
+      <h2 class="hand rv" id="h-c1" style="margin-top:20px">Bonnie, l'artisane, l'herboriste et le nez</h2>
+    </div>
+    <div class="voice rv" style="font-size:1.3rem;line-height:1.3">
+      <p>Je suis la propriétaire d'Esprit de la Nature, et aussi son artisane, son herboriste, son alchimiste et son nez. Je crée des encens, des parfums et des remèdes à base de plantes entières et d'extraits que je fabrique moi-même, à partir de mes nombreux jardins ou de la forêt où je vis. Je passe autant de temps à cultiver et à butiner qu'à composer.</p>
+      <p style="margin-top:1em">Mon inspiration vient souvent des plantes elles-mêmes, quand nous chantons ensemble. Un environnement sain est un chant olfactif que j'essaie de recréer dans chaque mélange.</p>
+      <p style="margin-top:1em">Formée à l'herboristerie mais autodidacte en parfumerie, je ne suis liée à aucune tradition. Ça me donne une grande liberté : des formules anciennes, des procédés anciens, et mes propres inventions. Macération, teinture, distillation, fermentation, percolation, conservation au sel et au sucre.</p>
     </div>
   </div>
 </section>
 
-<section class="chap on-paper" aria-labelledby="h-c2">
-  <h2 class="rv" id="h-c2">Sylvain, la cabane et la Caravane</h2>
-  <div class="chap__txt">
-    <p class="rv">Mon partenaire dans la vie et dans les affaires s'appelle Sylvain Pilon. Ça fait trente ans que nous co-créons. Une grande partie de l'année, nous vivons hors réseau dans la forêt, dans une cabane que nous avons construite avec des outils manuels et des fenêtres recyclées, isolée à la laine d'agneau.</p>
-    <p class="rv">Sans lui, Esprit de la Nature n'existerait pas. Il conçoit et fabrique les mille et un gadgets et écrans qui me facilitent la vie, il s'occupe du service à la clientèle, de l'emballage et de la livraison au bureau de poste. C'est aussi lui qui tient la Caravane de l'encens et la tente de l'encens à notre kiosque, dans les festivals et les marchés. Arrêtez-vous pour une bouffée, restez pour une conversation philosophique.</p>
-    <div class="chap__fig">
-      <figure class="rv"><div class="ring"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:900/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2024/04/Oliban-and-Sylvain.jpg" width="900" height="900" alt="Sylvain Pilon avec Oliban, le chien blanc" loading="lazy"></div><figcaption>Sylvain et Oliban, le chien qui cueille la nuit avec Bonnie</figcaption></figure>
-      <figure class="rv"><div class="ring"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:900/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2024/04/Packaging-Photo.jpg" width="900" height="900" alt="Boîtes en origami et contenants en métal et en verre" loading="lazy"></div><figcaption>Origami, métal, verre : l'emballage de Sylvain</figcaption></figure>
+<section class="half" aria-labelledby="h-c2" style="grid-template-columns:7fr 5fr">
+  <div class="sheet sheet--kraft half__sheet">
+    <div>
+      <svg class="plant rv" style="width:110px" viewBox="0 0 140 240" aria-hidden="true"><use href="#pl-pissenlit"/></svg>
+      <h2 class="hand rv" id="h-c2" style="margin-top:20px">Sylvain, la cabane et la Caravane</h2>
     </div>
+    <div class="voice rv" style="font-size:1.3rem;line-height:1.3">
+      <p>Mon partenaire dans la vie et dans les affaires s'appelle Sylvain Pilon. Ça fait trente ans que nous co-créons. Une grande partie de l'année, nous vivons hors réseau dans la forêt, dans une cabane que nous avons construite avec des outils manuels et des fenêtres recyclées, isolée à la laine d'agneau.</p>
+      <p style="margin-top:1em">Sans lui, Esprit de la Nature n'existerait pas. Il conçoit et fabrique les mille et un gadgets et écrans qui me facilitent la vie, il s'occupe du service à la clientèle, de l'emballage et de la livraison au bureau de poste. C'est aussi lui qui tient la Caravane de l'encens et la tente de l'encens à notre kiosque, dans les festivals et les marchés. Arrêtez-vous pour une bouffée, restez pour une conversation philosophique.</p>
+    </div>
+  </div>
+  <div class="half__photo">
+    <img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:1400/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2024/04/Oliban-and-Sylvain.jpg" width="1400" height="1400" alt="Sylvain Pilon avec Oliban, le chien blanc" loading="lazy">
+    <svg class="scrib" style="left:10%;top:8%;width:100px;height:100px;transform:rotate(-10deg)" viewBox="0 0 32 32"><path d="M16 29V7"/><path d="M16 12c-4 0-6.5-2-7.5-5.5 3.8-.2 6.4 1.7 7.5 5.5zM16 18c-4.4 0-7-2.2-8-6 4.2-.2 6.9 1.9 8 6zM16 24c-4.6 0-7.4-2.4-8.4-6.4 4.4-.1 7.2 2.1 8.4 6.4z"/><path d="M16 12c4 0 6.5-2 7.5-5.5-3.8-.2-6.4 1.7-7.5 5.5zM16 18c4.4 0 7-2.2 8-6-4.2-.2-6.9 1.9-8 6z"/></svg>
   </div>
 </section>
 
-<section class="section" aria-labelledby="h-c3">
-  <div class="story">
-    <h2 class="rv" id="h-c3">Ce qu'on ne fait jamais</h2>
-    <p class="story__txt rv">Pas de synthétique, pas de cueillette sans permission, pas de plastique inutile, pas d'ingrédient dont on ne connaît pas le récoltant. Quatre règles, dans l'ordre où elles comptent.</p>
-  </div>
-  <div class="vals">
-    <div class="val val--1 rv"><b>Cueillette consciente</b><p>On honore chaque plante et on lui demande la permission avant de récolter. Jamais trop.</p></div>
-    <div class="val val--2 rv"><b>Récoltants équitables</b><p>Biologique, direct, commerce équitable. On soutient les cueilleurs et artisans qui partagent nos valeurs.</p></div>
-    <div class="val val--3 rv"><b>Procédés écologiques</b><p>Jamais de synthétique. Huiles, graisses et alcool biologiques pour chaque extraction.</p></div>
-    <div class="val val--4 rv"><b>Emballage qui retourne à la terre</b><p>Boîtes en origami, boîtes de métal, contenants en verre. Carton, ruban adhésif et rembourrage recyclables.</p></div>
-  </div>
+<section class="voice-block" aria-labelledby="h-c3">
+  <h2 class="hand rv" id="h-c3" style="margin-bottom:24px">Ce qu'on ne fait jamais</h2>
+  <p class="rv">Pas de synthétique, pas de cueillette sans permission, pas de plastique inutile, pas d'ingrédient dont on ne connaît pas le récoltant.</p>
 </section>
+<div class="vals" style="padding-top:var(--gap);background:var(--bark)">
+  <div class="val val--1 rv"><b>Cueillette consciente</b><p>On honore chaque plante et on lui demande la permission avant de récolter. Jamais trop.</p></div>
+  <div class="val val--2 rv"><b>Récoltants équitables</b><p>Biologique, direct, commerce équitable. On soutient les cueilleurs et artisans qui partagent nos valeurs.</p></div>
+  <div class="val val--3 rv"><b>Procédés écologiques</b><p>Jamais de synthétique. Huiles, graisses et alcool biologiques pour chaque extraction.</p></div>
+  <div class="val val--4 rv"><b>Emballage qui retourne à la terre</b><p>Boîtes en origami, boîtes de métal, contenants en verre. Carton, ruban et rembourrage recyclables.</p></div>
+</div>
 
-<section class="section on-paper" aria-labelledby="h-c4" style="padding-bottom:0">
-  <div class="cta rv">
-    <div class="cta__a" aria-hidden="true"></div>
-    <div class="cta__main">
-      <h2 id="h-c4">Par où commencer ?</h2>
-      <p>Trois questions et on te propose les bons mélanges, avec leur histoire.</p>
-      <a class="btn" href="index.html#trouver" style="background:var(--bg);color:var(--ink)">Trouver mon encens</a>
-    </div>
-    <div class="cta__b"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:600/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2024/05/Website-incense-group-photo.jpg" width="600" height="600" alt="Les boîtes d'encens chauffé réunies" loading="lazy"></div>
+<section class="finder-wrap" aria-labelledby="h-c4">
+  <div class="sheet sheet--sage tilt-l rv" style="grid-column:1/9">
+    <h2 class="hand" id="h-c4">Par où commencer ?</h2>
+    <p class="voice" style="font-size:1.4rem">Trois questions et Bonnie te propose les bons mélanges, avec leur histoire.</p>
+    <a class="btn" style="margin-top:20px" href="index.html#trouver">Trouver mon encens</a>
   </div>
 </section>
 
 </main>
 
 <footer class="footer" aria-label="Pied de page">
-  <div class="blocks rv" aria-hidden="true">
-    <span style="height:92%">E</span><span style="height:70%">S</span><span style="height:100%">P</span><span style="height:64%">R</span><span style="height:84%">I</span><span style="height:76%">T</span>
-    <span class="g"></span>
-    <span style="height:68%">D</span><span style="height:96%">E</span>
-    <span class="g"></span>
-    <span style="height:80%">L</span><span style="height:62%">A</span>
-    <span class="g"></span>
-    <span style="height:100%">N</span><span style="height:72%">A</span><span style="height:88%">T</span><span style="height:66%">U</span><span style="height:94%">R</span><span style="height:78%">E</span>
-  </div>
-  <p class="sr">Esprit de la Nature</p>
+  <p class="hand outline name rv">Esprit de la Nature</p>
   <div class="footer__grid">
     <ul><li><a href="index.html#encens">Encens chauffés</a></li><li><a href="index.html#batons">Bâtons</a></li><li><a href="index.html#bruleurs">Brûleurs</a></li></ul>
     <ul><li><a href="index.html#parfums">Parfums</a></li><li><a href="index.html#apothicaire">Apothicaire</a></li><li><a href="index.html#huile-de-lys">Huile de lys</a></li></ul>
@@ -123,7 +120,6 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="main.js?v=7"></script>
+<script src="main.js?v=10"></script>
 </body>
 </html>

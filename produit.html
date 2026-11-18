@@ -7,17 +7,19 @@
 <meta name="description" content="Lac-Noir, un encens chauffé composé à la main dans les Laurentides : mousse, eau noire et résines, la forêt après l'orage. 25 $, boîte de métal.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500&family=Delicious+Handrawn&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=7">
+<link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Instrument+Serif&family=Hanken+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=10">
 <script>document.documentElement.classList.remove('no-js')</script>
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="p-flamme" viewBox="0 0 32 32"><path d="M16 2c1 5 4.5 7.6 7.2 10.8 3.6 4.2 3.5 10.3-.6 14.3-4 3.9-10.6 3.7-14.3-.4-3.4-3.8-3.3-9.6.4-13.3 1.4 2.3 2.9 3.3 4.6 3.4-.7-5.9.4-10.6 2.7-14.8z"/></symbol>
+  <symbol id="pl-cedre" viewBox="0 0 120 240"><path d="M58 238V60c-10 2-19 0-28-6 9-5 18-6 28-4V40c-9 1-17-2-24-8 8-4 16-5 24-2V20c-6 0-11-3-16-8 6-2 11-2 16 0 .6-5 1.6-9 3-12 1.4 3 2.4 7 3 12 5-2 10-2 16 0-5 5-10 8-16 8v10c8-3 16-2 24 2-7 6-15 9-24 8v10c10-2 19-1 28 4-9 6-18 8-28 6v18c11-3 22-1 32 5-10 7-21 9-32 7v22c12-4 24-2 36 5-12 8-24 10-36 8v20c13-4 26-2 40 6-14 9-27 11-40 8v22h-4z"/></symbol>
+</svg>
+
 <header class="nav" id="nav">
-  <a class="nav__mark" href="index.html" aria-label="Esprit de la Nature, accueil">
-    <svg class="sig" style="width:28px;height:28px" viewBox="0 0 32 32" aria-hidden="true"><path d="M16.2 28.5V9.8"/><path d="M11.4 14.3c1.5 1.1 3.2 1.4 4.8.9M20.9 17.6c-1.6 1-3.3 1.2-4.7.6"/><path d="M22.8 6.4c-2.7.4-4.6 2.7-4.4 5.3.2 2.4 2.1 4.2 4.5 4.3-.9 1.3-2.6 2-4.3 1.6-2.9-.6-4.7-3.4-4.1-6.3.5-2.6 2.9-4.5 5.5-4.6"/><path d="M8.6 27.1l15.2.3"/><path d="M9.3 6.1v.2M26 11.2v.2"/></svg>
-    Esprit de la Nature
-  </a>
+  <a class="nav__mark hand" href="index.html">Esprit de la Nature</a>
   <nav class="nav__links" aria-label="Principale">
     <a href="index.html#encens" aria-current="page">Encens</a>
     <a href="index.html#parfums">Parfums</a>
@@ -25,95 +27,77 @@
     <a href="index.html#huile-de-lys">Huile de lys</a>
     <a href="histoire.html">Notre histoire</a>
   </nav>
-  <a class="nav__cart" href="#panier">Panier <span class="dot" style="margin:0"></span> 0</a>
+  <a class="nav__cart" href="#panier">Panier · 0</a>
   <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
 </header>
 <div class="menu" id="menu">
-  <a href="index.html#encens">Encens</a>
-  <a href="index.html#parfums">Parfums</a>
-  <a href="index.html#apothicaire">Apothicaire</a>
-  <a href="index.html#huile-de-lys">Huile de lys</a>
-  <a href="histoire.html">Notre histoire</a>
+  <a class="hand" href="index.html#encens">Encens</a>
+  <a class="hand" href="index.html#parfums">Parfums</a>
+  <a class="hand" href="index.html#apothicaire">Apothicaire</a>
+  <a class="hand" href="index.html#huile-de-lys">Huile de lys</a>
+  <a class="hand" href="histoire.html">Notre histoire</a>
   <small>Livraison gratuite dès 175 $ · Laurentides, Québec</small>
 </div>
 
 <main>
 
 <section class="prod" aria-label="Lac-Noir">
-  <figure class="prod__img">
-    <img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:1400/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2025/11/Lac-Noir-Photo-SQUARE-WEB-copy.jpg" width="1400" height="1400" alt="Boîte ronde d'encens Lac-Noir ouverte, posée sur de la mousse humide" fetchpriority="high">
+  <figure class="prod__bg">
+    <img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:1800/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2025/11/Lac-Noir-Photo-SQUARE-WEB-copy.jpg" width="1800" height="1800" alt="Boîte ronde d'encens Lac-Noir ouverte, posée sur de la mousse humide" fetchpriority="high">
+    <svg class="scrib" style="left:70%;top:14%;width:90px;height:90px;transform:rotate(-8deg)" viewBox="0 0 32 32"><path d="M19.5 4.5c-5 1.6-8.4 6.3-8 11.7.4 5.6 5 9.9 10.6 10 1.6 0 3.1-.3 4.4-.9-2.1 3.1-5.8 5-9.9 4.6C10 29.3 5.1 23.8 5.6 17.3 6 11.4 10.6 6.7 16.3 6"/></svg>
+    <svg class="scrib" style="left:86%;top:40%;width:60px;height:60px;transform:rotate(20deg)" viewBox="0 0 32 32"><path d="M16 4v24M4 16h24M7.5 7.5l17 17M24.5 7.5l-17 17"/></svg>
   </figure>
-  <div class="prod__buy">
-    <div>
-      <div class="hero__word"><span class="dot"></span>Encens chauffé · boîte de métal</div>
-      <h1>Lac-Noir</h1>
-      <p class="lead">Une flaque après l'orage sur un sentier de forêt, qui reflète le ciel du soir. Mousse, eau noire et résines. Se chauffe, ne se brûle pas.</p>
-      <div class="notes" aria-label="Notes">
-        <span><i></i>Terre et mousse</span><span><i></i>Résines boréales</span><span><i></i>Pour le soir</span>
-      </div>
-      <div class="buy">
-        <div class="qty" aria-label="Quantité"><button type="button" data-d="-1" aria-label="Moins">−</button><output>1</output><button type="button" data-d="1" aria-label="Plus">+</button></div>
-        <a class="btn" href="#panier">Ajouter au panier</a>
-        <span class="price-big">25 $</span>
-      </div>
+  <div class="sheet tilt-l">
+    <span class="small">Encens chauffé · boîte de métal · <svg class="pic pic--rust"><use href="#p-flamme"/></svg>résines et terre</span>
+    <h1 class="hand">Lac-Noir</h1>
+    <p class="lead">Une flaque après l'orage sur un sentier de forêt, qui reflète le ciel du soir. Mousse, eau noire et résines. Se chauffe, ne se brûle pas.</p>
+    <div class="tags" aria-label="Notes"><span>Terre et mousse</span><span>Résines boréales</span><span>Pour le soir</span></div>
+    <div class="buy">
+      <div class="qty" aria-label="Quantité"><button type="button" data-d="-1" aria-label="Moins">−</button><output>1</output><button type="button" data-d="1" aria-label="Plus">+</button></div>
+      <a class="btn" href="#panier">Ajouter au panier</a>
+      <span class="price-big hand">25 $</span>
     </div>
-    <div class="prod__meta">
-      <span>Fait à la main dans les Laurentides</span>
-      <span>Sans synthétique</span>
-      <span>Livraison gratuite dès 175 $</span>
-    </div>
+    <p class="small" style="margin-top:20px">Fait à la main dans les Laurentides · sans synthétique · livraison gratuite dès 175 $</p>
   </div>
 </section>
 
-<section class="section" aria-labelledby="h-insp">
-  <div class="story">
-    <h2 class="rv" id="h-insp">D'où vient Lac-Noir</h2>
-    <div class="story__txt">
-      <p class="rv">Comme la plupart des gens, je recherche les étendues d'eau. Océans, rivières, lacs, étangs, et même les flaques. Il y a quelque chose dans l'eau qui nous pousse à nous dépasser.</p>
-      <p class="rv">Une de mes œuvres préférées est la gravure sur bois « La Flaque » de M. C. Escher : une petite flaque sur un sentier forestier après une pluie d'orage, qui reflète le ciel sans nuage du soir et la lune qui monte entre les arbres. Lac-Noir, c'est cette image traduite en odeur. La mousse qui s'égoutte, la terre qui boit, les résines que la chaleur réveille.</p>
-      <p class="rv muted">— Bonnie</p>
-    </div>
+<section class="story" aria-labelledby="h-insp">
+  <h2 class="hand rv" id="h-insp">D'où vient Lac-Noir</h2>
+  <div class="voice">
+    <p class="rv">Comme la plupart des gens, je recherche les étendues d'eau. Océans, rivières, lacs, étangs, et même les flaques. Il y a quelque chose dans l'eau qui nous pousse à nous dépasser.</p>
+    <p class="rv">Une de mes œuvres préférées est la gravure sur bois « La Flaque » de M. C. Escher : une petite flaque sur un sentier forestier après une pluie d'orage, qui reflète le ciel sans nuage du soir et la lune qui monte entre les arbres. Lac-Noir, c'est cette image traduite en odeur. La mousse qui s'égoutte, la terre qui boit, les résines que la chaleur réveille.</p>
+    <p class="rv hand" style="font-size:2rem;margin-top:1em">— Bonnie</p>
   </div>
-  <div class="pair">
-    <figure class="rv"><div class="ring"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:1000/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2026/08/Black-Spruce-Cladonia-Forest-square.jpg" width="1000" height="1000" alt="Sol de forêt d'épinettes noires couvert de lichen cladonia" loading="lazy"></div><figcaption>Le sol d'épinettes où Bonnie cueille le lichen</figcaption></figure>
-    <figure class="rv"><div class="ring"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:1000/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2024/11/Hypogymnia-physodes-closeup-copy.jpg" width="1000" height="1000" alt="Gros plan sur le lichen Hypogymnia physodes" loading="lazy"></div><figcaption>Hypogymnia physodes, un des lichens du mélange</figcaption></figure>
+</section>
+<div class="pair">
+  <figure class="rv"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:1000/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2026/08/Black-Spruce-Cladonia-Forest-square.jpg" width="1000" height="1000" alt="Sol de forêt d'épinettes noires couvert de lichen cladonia" loading="lazy"><figcaption>Le sol d'épinettes où Bonnie cueille le lichen</figcaption></figure>
+  <figure class="rv"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:1000/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2024/11/Hypogymnia-physodes-closeup-copy.jpg" width="1000" height="1000" alt="Gros plan sur le lichen Hypogymnia physodes" loading="lazy"><figcaption>Hypogymnia physodes, un des lichens du mélange</figcaption></figure>
+</div>
+
+<section class="finder-wrap" aria-labelledby="h-how" style="padding-top:0">
+  <div class="sheet sheet--kraft tilt-r rv" style="grid-column:1/9">
+    <svg class="plant" style="width:80px" viewBox="0 0 120 240" aria-hidden="true"><use href="#pl-cedre"/></svg>
+    <h2 class="hand" id="h-how" style="margin-top:12px">Comment on le chauffe</h2>
+    <p class="voice" style="font-size:1.4rem">Un encens chauffé ne se brûle pas. On en dépose une pincée sur un brûleur électrique ou sur un chauffe-encens à bougie chauffe-plat, et la chaleur libère le parfum sans fumée ni charbon. Une boîte dure des dizaines de séances.</p>
+    <p style="margin-top:12px">Si tu n'as pas de brûleur, le Lunora à 35 $ est celui pour commencer : pas de fil, une bougie, et il va avec tout.</p>
+    <a class="btn btn--ink" style="margin-top:20px" href="index.html#bruleurs">Voir les brûleurs</a>
   </div>
 </section>
 
-<section class="section on-paper" aria-labelledby="h-how">
-  <div class="story">
-    <h2 class="rv" id="h-how">Comment on le chauffe</h2>
-    <div class="story__txt">
-      <p class="rv">Un encens chauffé ne se brûle pas. On en dépose une pincée sur un brûleur électrique ou sur un chauffe-encens à bougie chauffe-plat, et la chaleur libère le parfum sans fumée ni charbon. Une boîte dure des dizaines de séances.</p>
-      <p class="rv">Si tu n'as pas de brûleur, le Lunora à 35 $ est celui pour commencer : pas de fil, une bougie, et il va avec tout.</p>
-      <a class="btn btn--ghost rv" href="index.html#bruleurs">Voir les brûleurs</a>
-    </div>
-  </div>
-</section>
-
-<section class="section related" aria-labelledby="h-rel">
-  <h2 class="rv" id="h-rel">Dans la même forêt</h2>
-  <div class="rel">
-    <a class="rv" href="#"><div class="ring"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:500/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2022/11/Website-Photo-copy.jpg" width="500" height="500" alt="" loading="lazy"></div><b>Forêt noire</b><span>Encens chauffé · 20 $</span></a>
-    <a class="rv" href="#"><div class="ring"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:500/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2021/02/Chaman-de-la-Foret-Incense-Updated-SQUARE-WEB-copy-1.jpg" width="500" height="500" alt="" loading="lazy"></div><b>Shamanes de la forêt</b><span>Encens chauffé · 22 $</span></a>
-    <a class="rv" href="#"><div class="ring"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:500/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2024/11/Mousse-et-Musc-product-photo.jpg" width="500" height="500" alt="" loading="lazy"></div><b>Mousse et musc</b><span>Bâtons · 20 $</span></a>
-    <a class="rv" href="#"><div class="ring"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:500/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2025/12/Candles-Heater-with-no-candle.jpg" width="500" height="500" alt="" loading="lazy"></div><b>Lunora</b><span>Chauffe-encens · 35 $</span></a>
+<section class="rel" aria-labelledby="h-rel">
+  <h2 class="hand rv" id="h-rel">Dans la même forêt</h2>
+  <div class="rel__grid">
+    <a class="rv" href="#"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:500/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2022/11/Website-Photo-copy.jpg" width="500" height="500" alt="" loading="lazy"><b>Forêt noire</b><span>Encens chauffé · 20 $</span></a>
+    <a class="rv" href="#"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:500/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2021/02/Chaman-de-la-Foret-Incense-Updated-SQUARE-WEB-copy-1.jpg" width="500" height="500" alt="" loading="lazy"><b>Shamanes de la forêt</b><span>Encens chauffé · 22 $</span></a>
+    <a class="rv" href="#"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:500/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2024/11/Mousse-et-Musc-product-photo.jpg" width="500" height="500" alt="" loading="lazy"><b>Mousse et musc</b><span>Bâtons · 20 $</span></a>
+    <a class="rv" href="#"><img src="https://mlw9xtittklw.i.optimole.com/cb:22iB.ef9/w:500/h:auto/q:mauto/f:best/https://espritdelanature.ca/wp-content/uploads/2025/12/Candles-Heater-with-no-candle.jpg" width="500" height="500" alt="" loading="lazy"><b>Lunora</b><span>Chauffe-encens · 35 $</span></a>
   </div>
 </section>
 
 </main>
 
 <footer class="footer" aria-label="Pied de page">
-  <div class="blocks rv" aria-hidden="true">
-    <span style="height:92%">E</span><span style="height:70%">S</span><span style="height:100%">P</span><span style="height:64%">R</span><span style="height:84%">I</span><span style="height:76%">T</span>
-    <span class="g"></span>
-    <span style="height:68%">D</span><span style="height:96%">E</span>
-    <span class="g"></span>
-    <span style="height:80%">L</span><span style="height:62%">A</span>
-    <span class="g"></span>
-    <span style="height:100%">N</span><span style="height:72%">A</span><span style="height:88%">T</span><span style="height:66%">U</span><span style="height:94%">R</span><span style="height:78%">E</span>
-  </div>
-  <p class="sr">Esprit de la Nature</p>
+  <p class="hand outline name rv">Esprit de la Nature</p>
   <div class="footer__grid">
     <ul><li><a href="index.html#encens">Encens chauffés</a></li><li><a href="index.html#batons">Bâtons</a></li><li><a href="index.html#bruleurs">Brûleurs</a></li></ul>
     <ul><li><a href="index.html#parfums">Parfums</a></li><li><a href="index.html#apothicaire">Apothicaire</a></li><li><a href="index.html#huile-de-lys">Huile de lys</a></li></ul>
@@ -125,7 +109,6 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="main.js?v=7"></script>
+<script src="main.js?v=10"></script>
 </body>
 </html>
