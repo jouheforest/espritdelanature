@@ -1,6 +1,6 @@
 /* Esprit de la Nature — maquette. Tout tourne sans dépendance sauf GSAP (fumée + scrub). */
 (function () {
-  document.querySelectorAll('.hand').forEach(h => { h.innerHTML = h.textContent.split('').map(c => c === ' ' ? ' ' : '<span class="l">' + c + '</span>').join(''); });
+  document.querySelectorAll('.hand').forEach(h => { h.innerHTML = h.textContent.trim().split(/\s+/).map(w => '<span class="w">' + w.split('').map(c => '<span class="l">' + c + '</span>').join('') + '</span>').join(' '); });
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* --- menu mobile --- */
