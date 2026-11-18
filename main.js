@@ -48,6 +48,8 @@
       });
     }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
     rv.forEach(el => io2.observe(el));
+    /* filet de sécurité : si l'observateur ne tire pas (onglet caché, vieux navigateur), tout apparaît quand même */
+    setTimeout(() => rv.forEach(el => { if (!el.classList.contains('is-in')) el.classList.add('is-in'); }), 2500);
   }
 
   /* --- hero : la lumière change dans la pièce (fondu lent) --- */
